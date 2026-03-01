@@ -1,0 +1,34 @@
+# PII and secrets
+.env
+.claudeignore
+
+# Generated job application files (contain PII)
+jobs/*/jd.md
+jobs/*/jd-parsed.md
+jobs/*/match-report.md
+jobs/*/resume.md
+jobs/*/resume.pdf
+
+# Memory files (personal experience data)
+memory/projects.md
+memory/skills.md
+memory/education.md
+memory/personal_projects.md
+memory/raw_descriptions.pdf
+
+# Templates (personal formatting)
+templates/resume_template.md
+templates/resume_format.docx
+
+# Job description intake file
+job.md
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Claude Code
+.claude/
