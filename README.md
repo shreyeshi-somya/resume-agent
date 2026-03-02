@@ -61,6 +61,7 @@ Then use shortcut commands:
 | `build` | Parse + match + generate resume markdown |
 | `full` | Full pipeline with approval pauses |
 | `finalize <Company-Role>` | Generate final markdown with PII + PDF |
+| `pdf <Company-Role>` | Regenerate PDF from existing `resume.md` |
 | `delete <Company-Role>` | Remove a job application folder |
 
 ## Project structure
