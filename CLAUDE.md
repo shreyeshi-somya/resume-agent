@@ -140,6 +140,7 @@ Save to `jobs/<company>-<role>/resume.md`.
 - `build` — Run Steps 0-3: intake, parse, match, and generate markdown resume
 - `full` — Run all steps (0-5) with pauses for approval
 - `finalize <Company>-<RoleAbbrev>` — Run Steps 4-5 on an existing folder to generate final markdown and PDF
+- `pdf <Company>-<RoleAbbrev>` — Regenerate PDF from an existing `jobs/<Company>-<RoleAbbrev>/resume.md` by running `python3 scripts/generate_pdf.py jobs/<Company>-<RoleAbbrev>/resume.md`
 - `delete <company>-<role>` — Delete the entire `jobs/<company>-<role>/` folder and all its contents
 - `skills` — Show current skills inventory
 - `projects` — Show project summaries
