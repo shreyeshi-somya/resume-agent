@@ -91,6 +91,7 @@ h2 {
     align-items: baseline;
     margin: 6pt 0 0 0;
     font-size: 10.5pt;
+    page-break-after: avoid;
 }
 
 .company-line .company {
@@ -106,6 +107,7 @@ h2 {
     font-style: italic;
     margin: 0 0 2pt 0;
     font-size: 10.5pt;
+    page-break-after: avoid;
 }
 
 /* ── Education blocks ── */
@@ -411,8 +413,8 @@ def _parse_projects(lines: list[str], start: int) -> tuple[str, int]:
     while i < len(lines) and not lines[i].startswith("## "):
         line = lines[i].strip()
 
-        # Project title: **Title** — Description
-        proj_match = re.match(r"^\*\*(.+?)\*\*\s*[—–-]\s*(.+)$", line)
+        # Project title: **Title** — Description  or  **Title**: Description
+        proj_match = re.match(r"^\*\*(.+?)\*\*\s*[—–\-:]\s*(.+)$", line)
         if proj_match:
             title = proj_match.group(1)
             desc = proj_match.group(2)

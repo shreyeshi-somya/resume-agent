@@ -121,6 +121,7 @@ Save to `jobs/<company>-<role>/resume.md`.
 - No orphan bullets — minimum 3 bullets per role, maximum 9
 - Skills section should exactly match JD keywords where truthful
 - No fluff, no objectives, no summaries unless the template calls for one
+- Never use em dashes (—) anywhere in the resume. Use commas, semicolons, or periods instead.
 
 ### ATS Rules
 - No tables, columns, or graphics in the final output
