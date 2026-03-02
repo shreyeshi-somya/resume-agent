@@ -6,6 +6,7 @@ import os
 import sys
 import re
 from pathlib import Path
+from dotenv import dotenv_values
 
 # WeasyPrint needs Homebrew's native libs (pango, gobject, etc.) on macOS.
 # The system Python can't find them automatically, so we patch the lookup.
@@ -464,7 +465,9 @@ def main():
         print(f"Error: {md_path} not found")
         sys.exit(1)
 
-    pdf_path = md_path.parent / "resume.pdf"
+    env = dotenv_values(Path(__file__).resolve().parent.parent / ".env")
+    full_name = env.get("FULL_NAME", "resume").title().replace(" ", "_")
+    pdf_path = md_path.parent / f"{full_name}.pdf"
 
     md_text = md_path.read_text(encoding="utf-8")
     body_html = parse_resume_md(md_text)

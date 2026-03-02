@@ -104,8 +104,9 @@ Save to `jobs/<company>-<role>/resume.md`.
 1. Read PII from `.env` file (name, email, phone, location, LinkedIn, GitHub)
 2. Inject PII into the header of the approved markdown
 3. Insert LinkedIn and Github as hyperlinks. So text says LinkedIn and GitHub but they have links that are from `.env`
-4. Highlight by pytting in bold the relevant keywords in bold
-5. Save to `jobs/<company>-<role>/resume.md`
+4. Highlight by putting in bold the relevant keywords in bold
+5. Bold key impact metrics (numbers, percentages, dollar amounts) — e.g., **40% upgrade rate**, **$3M**, **200K incremental users**. Be prudent: only bold the metric phrase, not the entire bullet
+6. Save to `jobs/<company>-<role>/resume.md`
 
 ### Step 5: Generate PDF
 1. Run `python3 scripts/generate_pdf.py jobs/<company>-<role>/resume.md`
