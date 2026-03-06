@@ -23,7 +23,7 @@ resume-agent/
 │       ├── jd-parsed.md       # Parsed JD (Step 1)
 │       ├── match-report.md    # Match report (Step 2)
 │       ├── resume.md          # Tailored resume markdown (Step 3)
-│       └── resume.pdf         # Final PDF (Step 4)
+│       └── <Name>.pdf         # Final PDF, named from .env FULL_NAME (Step 4)
 └── scripts/
     └── generate_pdf.py    # Markdown → PDF conversion script
 ```

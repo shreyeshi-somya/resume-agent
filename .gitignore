@@ -7,7 +7,7 @@ jobs/*/jd.md
 jobs/*/jd-parsed.md
 jobs/*/match-report.md
 jobs/*/resume.md
-jobs/*/resume.pdf
+jobs/*/*.pdf
 
 # Memory files (personal experience data)
 memory/projects.md

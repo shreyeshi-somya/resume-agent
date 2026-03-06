@@ -79,7 +79,7 @@ resume-agent/
 │       ├── jd-parsed.md      # Parsed requirements
 │       ├── match-report.md   # Skill match analysis
 │       ├── resume.md         # Tailored resume
-│       └── resume.pdf        # Final PDF
+│       └── <Name>.pdf        # Final PDF (named from .env FULL_NAME)
 └── scripts/
     └── generate_pdf.py       # Markdown to PDF converter
 ```
